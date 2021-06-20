@@ -1,6 +1,11 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Redirect;
+use App\Http\Controllers\ContactController;
+use App\Models\Contact;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,11 +18,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/ajout', function (){
-    return view('ajout');
-});
-Route::redirect('/', '/ajout');
+Route::view('/', 'welcome');
+Route::get('/ajout', [ContactController::class, 'index']);
+Route::post('/record', [ContactController::class, 'save']);
+// Route::redirect('/record', '/ajout');

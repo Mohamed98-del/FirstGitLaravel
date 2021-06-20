@@ -17,9 +17,9 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm">
-                <nav class="navbar navbar-expand-sm navbar-light bg-light mt-3">
-                    <a class="navbar-brand display-4 font-italic" href="#">Contacta</a>
+            <div class="col">
+                <nav class="navbar navbar-expand-md navbar-light bg-light mt-3">
+                    <a class="navbar-brand display-2 font-italic" href="#">Contacta</a>
                     <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
                         data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -31,12 +31,10 @@
                                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                    Contact</a>
+                                <a class="nav-link" href="#"><i class="fa fa-plus-circle" aria-hidden="true">&nbsp;Contact</i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-minus-circle" aria-hidden="true"></i>
-                                    Contact</a>
+                                <a class="nav-link" href="#"><i class="fa fa-minus-circle" aria-hidden="true">&nbsp;&nbsp;Contact</i></a>
                             </li>
                         </ul>
                         <form class="form-inline my-2 my-lg-0">
@@ -63,6 +61,7 @@
 
 
     <!-- Optional JavaScript -->
+    @yield('script')
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
